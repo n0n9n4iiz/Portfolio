@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path')
-var port = process.env.port || 8080;
+var port = process.env.PORT || 8080;
 const db = require('../backend/database');
 var app = express();
 app.use(bodyParser.json())
