@@ -10,8 +10,8 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors());
 app.use(express.static('frontend'))
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,'../frontend/index.html'))
- 
+    //res.sendFile(path.join(__dirname,'../frontend/index.html'))
+    res.send("dog");
 })
 app.get('/Home',db.getAll)
 app.listen(port,()=>{
