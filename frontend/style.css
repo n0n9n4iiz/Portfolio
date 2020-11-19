@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#section1{
+    padding-top: 100px;
+    height: 100%;
+}
+#section2{
+      height: 100%;
+      padding-top: 80px; 
+}
+#section3{
+    height: 100%;
+    padding-top: 80px; 
+}
+#section4{
+    height: 100%;
+    padding-top: 80px; 
+}
+.bg-image1{
+    background-image: url('image/bg-fuji.jpg'); 
+    height: 100%; 
+    width: 100%; 
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.box-img-profile{
+    height: 300px; 
+    width: 300px; 
+    margin: auto;
+    padding-top: 150px;
+}
+.image-profile{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid white 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.text-effect1{
+    color: white; 
+    font-weight: bold;
+    text-shadow: 0 0 3px #707070;
+}
+.head{
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 0 0 3px #707070;
+}
+.text{
+    font-size: 18px;
+}
+.b-line{
+    border: solid white 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px rgb(77, 77, 77);
+}
+/* button */
+.button1 {
+    border-radius: 10px;
+    background-color: rgb(230, 163, 76);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    text-decoration: none !important;
+    box-shadow: 2px 3px rgb(124, 124, 124);
+  }
+.button1:hover{
+color: white;
+font-size: 28px;
+}

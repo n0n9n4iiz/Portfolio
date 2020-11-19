@@ -2,20 +2,131 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Profile</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <div id="app">
-        {{ message }}
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section4">Contract</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="section1" class="bg-image1">
+        <div class="container">
+            <img src="image/naini3.png" style="height: 650px; position: absolute; bottom: 0px; right: 0px;" alt=""
+                srcset="">
+            <div class="row">
+                <div class="col-8" style=" padding-top: 300px;">
+                    <div class="text-effect1">
+                        <div style="padding-left: 50px; font-size: 40px;">Hi, My name is <br></div>
+                        <div style="padding-left: 100px; padding-top: 20px; padding-bottom: 20px; font-size: 50px;">"
+                            Krittayot Anuboot "</div>
+                        <div style="padding-left: 50px; font-size: 40px;">Let's see more
+                            <a class="button1" style="margin-left: 30px;" href="#section2" role="button">About
+                                me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div id="section2" style="background-color: rgb(59, 167, 167);">
+        <div class="row">
+            <div class="col-5">
+                <div id="carouselSlidesOnly" class="carousel slide box-img-profile" data-ride="carousel"
+                    data-interval="1000">
+                    <div class="carousel-inner image-profile">
+                        <div class="carousel-item active">
+                            <img src="image/person2.jpg" style="padding-bottom: 100px;" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/person1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7" style="color: white;">
+                <div class="container" style="word-wrap: break-word; padding-top: 20px;">
+                    <div class="head">
+                        Profile
+                    </div>
+                    <div class="text">
+                        <p>
+                            My name is Krittayot Anuboot, My nickname is Nai, I am 23 years old
+                            I am from Pattani(South of Thailand).
+                        </p>
+                    </div>
+                    <hr class="b-line">
+                    <div class="head">
+                        Education
+                    </div>
+                    <div class="text">
+                        <p>
+                            I graduated from Prince of Songkla University, Phuket campus
+                            College of computing in major Software Engineering.
+                        </p>
+                        <p>
+                            I study about the principles and systematic methods
+                            for the development and maintenance of real world software applications
+                            in order to obtain higher quality, lower cost and meet use requirements.
+                            and develop skills needed in software development, for example,
+                            software requirements, analysis and design, software testing and software
+                            project management.
+                        </p>
+                        <p>
+                            GPA : 3.26
+                        </p>
+                    </div>
+                    <hr class="b-line">
+                    <div class="head">
+                        Hobby
+                    </div>
+                    <div class="text">
+                        <p>
+                            I love taking care of my plants, watching movies,
+                            playing games, surfing the internet, listening to music,
+                            exercising, and going shopping.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        Skill of programming
+
+    </div>
+    <div id="section4">
+        Contract
+
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -29,13 +140,7 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
-       
-        var vue = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello Vue!'
-            }
-        })
+
     </script>
 </body>
 
